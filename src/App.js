@@ -1,28 +1,44 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+import PokemonCard from './app/views/PokemonCard';
+import { connect } from 'react-redux';
+import { pokemonOperations} from "./app/redux/pokemon";
+
+const mapStateToProps = state => ({
+  ...state.pokemon,
+});
+
+const getRandomInt = max => Math.floor(Math.random() * Math.floor(max));
+
+const mapDispatchToProps = dispatch => {
+  const fetchPokemon = id => dispatch(pokemonOperations.fetchPokemon(id));
+
+  return { fetchPokemon };
+};
 
 class App extends Component {
+  componentDidMount() {
+    this.props.fetchPokemon({ id: 7 });
+    this.props.fetchPokemon({ id: 4 });
+    this.props.fetchPokemon({ id: 1 });
+  }
+
+  fetchRandomPokemon = () => {
+    const randomInt = getRandomInt(50);
+    this.props.fetchPokemon({ id: randomInt, index: 3 });
+  };
+
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+      <div className="app">
+        <h1>Pokemon Viewer</h1>
+        {
+          this.props.pokemon.map(p => <PokemonCard key={p.id} pokemon={p}/>)
+        }
+        <button onClick={this.fetchRandomPokemon}>Random Pokemon</button>
       </div>
     );
   }
 }
 
-export default App;
+export default connect(mapStateToProps, mapDispatchToProps)(App);
