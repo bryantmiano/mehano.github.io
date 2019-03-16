@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="5a5e80f2-0792-4dfc-ae8d-bf97aca058b4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -80,8 +79,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="44" selection-start-line="16" selection-start-column="44" selection-end-line="16" selection-end-column="44" />
+            <state relative-caret-position="34">
+              <caret line="2" column="39" selection-start-line="2" selection-start-column="39" selection-end-line="2" selection-end-column="39" />
             </state>
           </provider>
         </entry>
@@ -153,9 +152,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1121" />
+    <option name="x" value="864" />
     <option name="y" value="68" />
-    <option name="width" value="787" />
+    <option name="width" value="1044" />
     <option name="height" value="1000" />
   </component>
   <component name="ProjectLevelVcsManager">
@@ -257,19 +256,19 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1552745511825</updated>
-      <workItem from="1552745513723" duration="8484000" />
+      <workItem from="1552745513723" duration="9232000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8484000" />
+    <option name="totallyTimeSpent" value="9232000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1121" y="68" width="787" height="1000" extended-state="0" />
+    <frame x="864" y="68" width="1044" height="1000" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.45393857" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.33797216" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" />
@@ -424,8 +423,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="44" selection-start-line="16" selection-start-column="44" selection-end-line="16" selection-end-column="44" />
+        <state relative-caret-position="34">
+          <caret line="2" column="39" selection-start-line="2" selection-start-column="39" selection-end-line="2" selection-end-column="39" />
         </state>
       </provider>
     </entry>
